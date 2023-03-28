@@ -1,0 +1,22 @@
+### Test /students to get all students in the DB
+GET {{host}}/api/students
+
+### Test /students to get specific student data, search by sid
+GET {{host}}/api/students/4
+
+### Test /students to post a new student in the DB
+POST {{host}}/api/students
+Content-Type: application/json
+
+{
+  "sid": "6",
+  "name": "Denis",
+  "email": "denis097@gmail.com",
+  "program": "CS"
+}
+
+
+### Delete student by student id
+DELETE {{host}}/api/students/2
+Accept: application/json
+

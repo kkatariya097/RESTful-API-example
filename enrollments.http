@@ -1,0 +1,5 @@
+### Test /enrollment to get all data in the DB
+GET {{host}}/api/students/2/offerings
+
+### Test /enrollment
+GET {{host}}/api/offerings/4/students

@@ -1,0 +1,24 @@
+### Test /offering to get all data in the DB
+GET {{host}}/api/offerings
+
+### Test /offering to get specific data, search by oid
+GET {{host}}/api/offerings/4
+
+### Test /offerings to post a new offerings in the DB
+POST {{host}}/api/offerings
+Content-Type: application/json
+
+{
+  "oid": "8",
+  "semester": "F",
+  "year": "2022",
+  "section": "B",
+  "cid": "3",
+  "iid": "2"
+}
+
+
+### Delete offerings by offering id
+DELETE {{host}}/api/offerings/8
+Accept: application/json
+

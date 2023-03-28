@@ -1,0 +1,22 @@
+### Test /instructor to get all data
+GET {{host}}/api/instructors
+
+### Test /instructor to get specific instructor data, search by iid
+GET {{host}}/api/instructors/2
+
+### Test /instructor to post a new instructor in the DB
+POST {{host}}/api/instructors
+Content-Type: application/json
+
+{
+  "iid": "4",
+  "name": "Jack",
+  "email": "jack097@gmail.com",
+  "department": "SC"
+}
+
+
+### Delete instructor by iid
+DELETE {{host}}/api/instructors/4
+Accept: application/json
+
