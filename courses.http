@@ -1,0 +1,21 @@
+### Test /courses to find all courses in the DB
+GET {{host}}/api/courses
+
+### Test /courses to get specific course data, search by course id
+GET {{host}}/api/courses/2
+
+### Test /course to post a new student in the DB
+POST {{host}}/api/courses
+Content-Type: application/json
+
+{
+  "cid": "5",
+  "name": "Web Services1",
+  "code": "WS1",
+  "credits": "6"
+}
+
+
+### Delete course by course id
+DELETE {{host}}/api/courses/4
+Accept: application/json
